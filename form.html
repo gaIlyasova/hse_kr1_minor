@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            color: midnightblue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
+        }
+
+        .active {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<html>
+
+<body>
+    <ul>
+        <li><a href="./index.html">Главная страница</a></li>
+        <li><a href="./table.html">История города</a></li>
+        <li><a href="./sights.html">Достопримечательности</a></li>
+        <li><a href="./form.html" class="active">Анкета</a></li>
+        <li><a href="./passport.html">Паспортные данные</a></li>
+        <li><a href="./DOM.html">Считывание с DOM</a></li>
+        <li><a href="./task.html">Задание</a></li>
+        <li><a href="https://ru.wikipedia.org/wiki/%D0%90%D1%80%D1%81%D0%BA">Узнать подробнее</a></li>
+    </ul>
+
+
+    <h3 align="center">Анкета</h3>
+    <form action="https://www.google.com/?hl=ru" id="UserEnter" name="UserEnter" target="_blank">
+        <p>Для поисковика:<input type="hidden" name="q" value="search"></p>
+        <p>ФИО: <input type="text" name="full_name" size=20 value="Иванов Иван Иванович"></p>
+        <p>Возраст: <input type="number" name="age" size=20 value="0"></p>
+        <p>Учебная группа:<input type="text" name="group"></p>
+        <p>Номер телефона:<input type="tel" name="phone_number"></p>
+        <p>Электронная почта:<input type="text" name="email"></p>
+        <p>Пароль: <input type="password" name="password" size=12></p>
+        <p>Дата отправки:<input type="date" name="date_enter" value="2001-01-01"></p>
+
+        <p>Были ли Вы раньше в Татарстане?</p>
+        <input type="radio" name="was_question" value="yes">Да, был(а)
+        <input type="radio" name="was_question" value="no">Нет, не был(а)
+
+        <p>Какую достопримечательность Вы хотели бы посетить?
+            <input type="checkbox" name="sight_visit" value="park">Набережная
+            <input type="checkbox" name="sight_visit" value="museum">Музей
+            <input type="checkbox" name="sight_visit" value="church">Церковь
+        </p>
+
+        <p>Степень знакомства с городом
+            <select name="familiarity">
+                <OPTION value="very_good">Высокая</OPTION>
+                <OPTION value="good">Средняя</OPTION>
+                <OPTION value="bad">Низкая</OPTION>
+            </select>
+        </p>
+
+        <p> Дополнительная информация:
+            <br>
+            <TEXTAREA cols=80 rows=4 name="textarea">Для предложений и мыслей</TEXTAREA>
+        </p>
+
+
+        <input type="hidden" name="function" value="search">
+        <p>
+            <input type="reset" name="reset" value="Обновить">
+            <input type="submit" name="submit" value="Отправить">
+        </p>
+    </form>
+</body>
+
+</html>

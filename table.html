@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Table</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            color: midnightblue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
+        }
+
+        table {
+            background-image: url(images/table_background.jpg);
+            background-color: aliceblue;
+        }
+
+        .ourdays {
+            background-image: url(images/td_background.jpg);
+            background-color: ghostwhite;
+        }
+
+        .active {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="./index.html">Главная страница</a></li>
+        <li><a href="./table.html" class="active">История города</a></li>
+        <li><a href="./sights.html">Достопримечательности</a></li>
+        <li><a href="./form.html">Анкета</a></li>
+        <li><a href="./passport.html">Паспортные данные</a></li>
+        <li><a href="./DOM.html">Считывание с DOM</a></li>
+        <li><a href="./task.html">Задание</a></li>
+        <li><a href="https://ru.wikipedia.org/wiki/%D0%90%D1%80%D1%81%D0%BA">Узнать подробнее</a></li>
+    </ul>
+    <table id="table">
+        <tr>
+            <td a id="history" colspan="3" align="center">
+                <h1>История города</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ol>
+                    <li><a href="#founding">Основание</a></li>
+                    <li><a href="#middleage">Арская земля</a></li>
+                    <li><a href="#19cent">Уездный город</a></li>
+                    <li><a href="#20cent">XX век</a></li>
+                    <li><a href="#ourdays">Наши дни</a></li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img width="300px" src="./images/lastwall_img.jpg" alt="Последняя стена Арской крепости">
+            </td>
+            <td colspan="2">
+                <ol>
+                    <li a id="founding">
+                        <h3>Основание</h3>
+                    </li>
+                    <p>Арск возник в средневековье как пограничная крепость-форпост. По наиболее распространённой
+                        версии, он появился в начале XIII века, ещё до монгольского нашествия. Крепость защищала
+                        окрестные земли от набегов. Татарское
+                        название города, Арча, историки связывают со словом со значением «тыл» или «спина».</p>
+
+                    <li a id="middleage">
+                        <h3>Арская земля</h3>
+                    </li>
+                    <p>В Средние века город был центром Арской земли и вотчиной арских князей. В русских летописях Арск
+                        впервые упоминается в 1497 году. После присоединения Казанского ханства к Русскому государству
+                        он стал русской крепостью, и в XVII веке за ним закрепилась эта роль.</p>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <ol start="3">
+                    <li a id="19cent">
+                        <h3>Уездный город</h3>
+                    </li>
+                    <p>В 1781 году указом Екатерины II Арск получил статус города Казанского наместничества. С 1796 года
+                        он находился в составе Казанской губернии. Тогда же был утверждён исторический герб города.</p>
+                    <li a id="20cent">
+                        <h3>XX век</h3>
+                    </li>
+                    <p>В 1926 году в ходе административной реформы Арск потерял статус города и стал селом. В 1938 году
+                        он стал посёлком городского типа, а в 1930 году был образован Арский район, центром которого
+                        город остаётся до сих пор.</p>
+                </ol>
+            </td>
+            <td align="center">
+                <img width="600px" src="./images/20century_img.jpeg" alt="Арск в 20-м веке">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center" a id="ourdays" class="ourdays">
+                <h3>Наши дни</h3>
+                <p>В 2008 году Арску вернули статус города. Сегодня это районный центр примерно в 60 км от Казани на
+                    реке Казанке, где сохраняется память о пограничной крепости: она отражена и в гербе.</p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
